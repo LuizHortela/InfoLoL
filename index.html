@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>LOL Info</h1>
+        <center> 
+        <h2></h2>
+        <p style="font-size:14px; ">Bem vindo ao LolInfo ! Um site para você obter todas as informações sobre os queridos campeões de League of legends.</p>
+        <p style="font-size:14px; ">Mergulhe no universo dos campeões! Aqui você encontra <b>TODAS</b> as informações que precisa para dominar o conhecimento dos campeões.</p>
+
+        <h3>Você pode procurar pelos seguintes critérios:</h3>
+
+        <p style="font-size:14px; "> - Nome do Campeão -</p>
+        <p style="font-size:14px; "> - Ano de lançamento -</p>
+        <p style="font-size:14px; "> - Rota Principal -</p>
+        <p style="font-size:14px; "> - Classe -</p>
+        <p style="font-size:14px; "> - Tipo de dano -</p>
+        <p style="font-size:14px; "> - Região de Origem -</p>
+        <p> </p>
+        <h3>Nome dos Personagens:</h3>
+        <p style="font-size:13px; ">Aatrox - Ahri - Akali - Akshan - Alistar - Amumu - Anivia - Annie - Aphelios - Ashe - Aurelion Sol - Aurora - Azir - Bardo- Bel'Veth - Blitzcrank<p>
+        <p style="font-size:13px; ">Brand - Braum - Briar - Caitlyn - Camille - Cassiopeia - Cho'Gath - Corki - Darius - Diana - Dr. Mundo - Draven - Ekko - Elise - Evelynn - Ezreal</p>
+
+        <p style="font-size:13px; ">Fiddlesticks - Fiora - Fizz - Galio - Gangplank - Garen - Gnar - Gragas - Graves - Gwen - Hecarim - Heimerdinger - Hwei - Illaoi - Irelia - Ivern</p>
+
+        <p style="font-size:13px; ">Janna - Jarvan IV - Jax - Jayce - Jhin - Jinx - K'Sante - Kai'Sa - Kalista - Karma - Karthus - Kassadin - Katarina  - Kayle - Kayn - Kennen - Kha’Zix </p>
+
+        <p style="font-size:13px; ">Kindred - Kled - Kog'Maw - LeBlanc - Lee Sin - Leona - Lillia - Lissandra - Lucian - Lulu - Lux - Malphite - Malzahar - Maokai  - Master Yi  - Milio</p>
+            
+        <p style="font-size:13px; ">Miss Fortune - Mordekaiser - Morgana - Naafiri - Nami - Nasus - Nautilus - Neeko - Nidalee - Nilah - Nocturne - Nunu & Willump - Olaf - Orianna </p>
+        <p style="font-size:13px; ">Ornn - Pantheon - Poppy - Pyke - Qiyana - Quinn - Rakan - Rammus - Rek'Sai - Rell - Renata Glasc - Renekton - Rengar - Riven - Rumble - Ryze</p>
+        <p style="font-size:13px; ">Samira - Sejuani - Senna - Seraphine - Sett - Shaco - Shen - Shyvana - Singed - Sion - Sivir - Skarner - Smolder - Sona - Soraka - Swain - Sylas </p>
+        <p style="font-size:13px; ">Syndra - Tahm Kench - Taliyah - Talon - Taric - Teemo - Thresh - Tristana - Trundle - Tryndamere - Twisted Fate - Twitch - Udyr - Urgot - Varus</p>
+        <p style="font-size:13px; "> Vayne - Veigar - Vel'Koz - Vex - Vi - Viego - Viktor - Vladimir - Volibear - Warwick - Wukong - Xayah  - Xerath - Xin Zhao - Yasuo - Yone - Yorick - Yuumi</p>
+        <p style="font-size:14px; ">Zac - Zed - Zeri - Ziggs - Zilean - Zoe - Zyra</p>
+        <p style="font-size:14px; ">  - a</p>
+        <p style="font-size:14px; "> </p>
+        <p style="font-size:14px; ">  - </p>
+        <p style="font-size:14px; ">  - </p>
+
+        <p style="font-size:14px; ">  - </p>
+        <p style="font-size:14px; ">  - </p>
+        
+    </center>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o nome do campeão, sua rota ou qualquer outro critério" id="campo-pesquisa">
+            <button onclick="pesquisar()">Enviar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+            <h1>Procure por rotas !</h1>
+            <button id="btnTopo">Topo</button>
+            <div id="resultados-pesquisa"></div>
+            <p> </p>
+
+            <button id="btnSelva">Selva</button>
+            <div id="resultados-pesquisa"></div>
+            <p> </p>
+
+            <button id="btnMeio">Meio</button>
+            <div id="resultados-pesquisa"></div>
+            <p> </p>
+
+            <button id="btnAtirador">Atirador</button>
+            <div id="resultados-pesquisa"></div>
+            <p> </p>
+
+
+            <button id="btnSuporte">Suporte</button>
+            <div id="resultados-pesquisa"></div>
+            <p> </p>
+
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Todos os direitos reservados </p>
+        <p>Imersão Dev com Google Gemini</p>
+        <p>Sugestões para melhoras e/ou correções? Entre em contato email: guibarretoluiz@gmail.com </p>
+        <p>Agradecimentos: Alura, pela oportunidade de estudar e aprender ! </p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
